@@ -17,14 +17,15 @@ class CLI
                 three_digit_codes
                 date_choice
                 puts "Please enter the index number in reference to the three digit currency code that you wish to use."
+                sleep 2
                 display_list_of_currencies
                 currency_choice
                 display_list_of_rates
-                puts "Would you like to continue? Press 1 for yes and 2 for no"
+                puts "Would you like to continue? Press 1 for yes and anything else to leave the program."
             x = gets.strip
             end
             puts "Have a nice day!"
-            break
+            break 
         elsif new_input == "2"
             puts "Have a nice day!"
             break
